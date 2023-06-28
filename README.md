@@ -1,1 +1,52 @@
-# PluginWordPress
+# Plugin For WordPress
+
+I have created the two requested plugins and the FrontEnd page.
+
+## Viewing Options
+
+You have two options to view these plugins:
+
+Option 1: Add the plugins with the instructions provided above
+
+You can follow the instructions provided for each plugin to add them to your WordPress website. This option allows you to test the plugins directly on your local or staging environment.
+
+Option 2: Test them on a live website
+
+I have a separate live website specifically for testing purposes, and the plugins are already installed. This option allows you to see how the plugins function in a real-time environment. The credentials to log in to this page were sent to the HR in an email.
+
+## Back-End Test 1 - Character Plugin
+
+### Description
+
+Plugin to update post meta and retrieve data from Thrones API for Character posts.
+
+### Instructions
+
+1. To add a new character, navigate to the Character post type and click on "Add New".
+2. Enter the character ID for the desired character.
+3. Once the character ID is added, the title and featured image will be fetched from the API.
+
+## Back-End Test 2 - "Competitions" & "Entries"
+
+### Description
+
+In this plugin, you will be able to create a list of competitions and add entries for each competition.
+
+### Instructions
+
+1. Create a new page and insert the following shortcode to display the list of competitions: `[competitions_list]`.
+2. Create a new page titled "Submit Entry" and add the shortcode `[entry_form]` to display the entry submission form.
+3. Once the competitions list is added, you will be able to view the competitions page where the shortcode is located. You can see their Title, Description, and Image.
+4. To add entries, navigate to the page where you added the competitions list shortcode. Click on the desired competition and then click on "Submit Entry" to add it correctly.
+5. After completing the previous step, you will be able to see the entry in the Entries post type within the WordPress Backend.
+
+## Additional Information
+
+I have also created a child theme based on "Theme Twenty Twenty Three" in case you want to make CSS changes for future development. I have included the file that reads the theme.
+
+### Theme Information
+
+- Parent Theme: Theme Twenty Twenty Three
+- Child Theme: Theme Twenty Twenty Three Child
+
+Please follow the instructions above to add a character using the plugin. Let me know if you have any further questions or need additional assistance.
