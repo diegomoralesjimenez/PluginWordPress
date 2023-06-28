@@ -1,18 +1,6 @@
 # Plugin For WordPress
 
-I have created the two requested plugins and the FrontEnd page.
-
-## Viewing Options
-
-You have two options to view these plugins:
-
-Option 1: Add the plugins with the instructions provided above
-
-You can follow the instructions provided for each plugin to add them to your WordPress website. This option allows you to test the plugins directly on your local or staging environment.
-
-Option 2: Test them on a live website
-
-I have a separate live website specifically for testing purposes, and the plugins are already installed. This option allows you to see how the plugins function in a real-time environment. The credentials to log in to this page were sent to the HR in an email.
+I have created the two requested plugins and the FrontEnd page. I tested both plugins in a local environment both of them worked successfully
 
 ## Back-End Test 1 - Character Plugin
 
