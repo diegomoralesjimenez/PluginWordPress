@@ -28,13 +28,8 @@ In this plugin, you will be able to create a list of competitions and add entrie
 4. To add entries, navigate to the page where you added the competitions list shortcode. Click on the desired competition and then click on "Submit Entry" to add it correctly.
 5. After completing the previous step, you will be able to see the entry in the Entries post type within the WordPress Backend.
 
-## Additional Information
+## FrontEnd - "Travelopia"
 
-I have also created a child theme based on "Theme Twenty Twenty Three" in case you want to make CSS changes for future development. I have included the file that reads the theme.
-
-### Theme Information
-
-- Parent Theme: Theme Twenty Twenty Three
-- Child Theme: Theme Twenty Twenty Three Child
+I based my design on the homepage you guys have!
 
 Please follow the instructions above to add a character using the plugin. Let me know if you have any further questions or need additional assistance.
