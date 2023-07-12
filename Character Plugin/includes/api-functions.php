@@ -31,6 +31,44 @@ function retrieve_character_data($character_id) {
     return $data;
 }
 
+// Function to update post with character data
+function update_post_with_character_data($post_id) {
+    // Check if the saved post is of type "character"
+    if (get_post_type($post_id) !== 'character') {
+        return;
+    }
+
+    // Retrieve character ID from custom field
+    $character_id = get_post_meta($post_id, 'character_id', true);
+    
+    // Check if character ID is empty
+    if (empty($character_id)) {
+        return;
+    }
+
+    // Retrieve character data
+    $character_data = retrieve_character_data($character_id);
+
+    // Update post title
+    $post_title = $character_data['name']; // Assuming 'name' is the key for the character's name in the retrieved data
+    if (!empty($post_title)) {
+        $post_data = array(
+            'ID'         => $post_id,
+            'post_title' => $post_title,
+        );
+        wp_update_post($post_data);
+    }
+
+    // Update featured image
+    $featured_image_url = $character_data['image_url']; // Assuming 'image_url' is the key for the character's image URL in the retrieved data
+    if (!empty($featured_image_url)) {
+        $attach_id = save_featured_image_from_url($featured_image_url, $post_id);
+        if ($attach_id) {
+            set_post_thumbnail($post_id, $attach_id);
+        }
+    }
+}
+
 // Hook into post save to update the post title and set the featured image
 add_action('save_post_character', 'update_post_with_character_data', 10, 1);
 
